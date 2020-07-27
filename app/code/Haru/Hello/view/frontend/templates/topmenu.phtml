@@ -1,0 +1,12 @@
+<?php
+$classActive = '';
+$pageId = $block->getRequest()->getParam('page_id');
+if ($pageId == 7) {
+    $classActive = 'active';
+}
+?>
+<li class="level0 <?= $classActive ?> last level-top ui-menu-item">
+    <a href="<?= $block->getUrl('product/index/special') ?>" class="level-top ui-corner-all" id="ui-id-8" tabindex="-1" role="menuitem">
+        <span><?= __('Special Products'); ?></span>
+    </a>
+</li>

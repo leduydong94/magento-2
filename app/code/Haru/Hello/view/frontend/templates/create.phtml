@@ -1,0 +1,23 @@
+<?php
+    date_default_timezone_set('Asia/Ho_Chi_Minh');
+?>
+<form action="<?= $block->getBaseUrl(). 'haru/index/save' ?>" method="post" enctype="multipart/form-data">
+    <div>
+        <label for="">Name</label>
+        <input type="text" name="name" required>
+    </div>
+    <div>
+        <label for="">Email</label>
+        <input type="email" name="email" required>
+    </div>
+    <div>
+        <label for="">Image</label>
+        <br>
+        <input type="file" name="image">
+    </div>
+    <br>
+    <div>
+        <input type="hidden" name="create_at" value="<?= date('Y-m-d H:i:s') ?>">
+        <input type="submit" value="Create">
+    </div>
+</form>

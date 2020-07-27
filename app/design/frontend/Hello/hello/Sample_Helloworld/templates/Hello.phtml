@@ -1,0 +1,223 @@
+<style>
+    .page-main{
+        padding: 0 !important;
+        max-width: 1800px;
+    }
+    .page-content{
+        padding-top: 185px;
+        text-align: center;
+    }
+    .page-content h1{
+        color: #956c58;
+        /*text-align: center;*/
+        /*margin-bottom: 0 !important;*/
+    }
+    .page-content hr{
+        border-top: 1px solid #956c58 !important;
+        margin-left: 38%;
+        margin-right: 38%;
+    }
+    .top-content p{
+        /*padding: 70px 280px 0px 280px;*/
+        width: 60%;
+        margin: 60px auto;
+    }
+    .col-md-4 img{
+        width: 70%;
+        height: 70%;
+    }
+    .clock{
+        padding-left: 9%;
+        padding-right: 9%;
+        padding-top: 20px;
+    }
+    .clock img{
+        width: 90%;
+    }
+    .clock img:hover {
+        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+    .clock h3{
+        padding-top: 30px;
+    }
+    .clock p{
+        padding-top: 30px;
+        text-align: justify;
+        margin: 0px 23px;
+        font-size: 13px;
+    }
+    .count{
+        padding-top: 130px;
+    }
+    .count img{
+        position: absolute;
+    }
+    .count h1{
+        margin-bottom: 0 !important;
+        font-weight: bolder;
+        color: #995437;
+        text-align: center;
+    }
+    .count h4{
+        color: #ffffff;
+        text-align: center;
+    }
+    .count-row{
+        /*padding-top: 80px;*/
+        padding: 64px 17% 0 17%;
+    }
+    .clock-lorem img{
+        position: relative;
+        padding-top: 63px;
+    }
+
+    .bot-content{
+        text-align: center;
+        padding-top: 80px;
+    }
+    .bot-content h1{
+        color: #ad7863;
+    }
+    .bot-content p{
+        /*padding: 70px 280px 0px 280px;*/
+        font-size: 20px;
+        font-weight: bold;
+        width: 80%;
+        margin: 60px auto;
+    }
+    .carousel_product{
+        margin-top: 70px;
+        background-color: black;
+        height: 560px;
+    }
+    .carousel_product .item{
+        padding: 25px 10px;
+    }
+    .carousel_product .item img{
+        height: 480px;
+    }
+
+    .owl-nav.disabled{
+        display: flex !important;
+        background-color: #aab2b5;
+    }
+    .owl-carousel .owl-nav{
+        position: relative;
+        background-color: #aab2b5 !important;
+
+    }
+    .owl-carousel .owl-nav .owl-prev{
+        position: absolute;
+        left: 30px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #8a6758 !important;
+        border-radius: 25px !important;
+    }
+    .owl-carousel .owl-nav .owl-prev:hover{
+        background-color:#8a6758 !important ;
+    }
+    .owl-carousel .owl-nav .owl-next{
+        position: absolute;
+        right: 30px;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #8a6758 !important;
+        border-radius: 25px !important;
+    }
+    .owl-carousel .owl-nav .owl-next:hover{
+        background-color:#8a6758  !important;
+    }
+</style>
+<div class="page-content">
+    <h1>OUR TEAM LEADERS</h1>
+    <hr>
+    <div class="top-content">
+        <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet consequatur eum ex facilis harum in iure maxime nulla repudiandae, velit, vero! Assumenda corporis eum id necessitatibus rem sit temporibus?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. A amet consequatur eum ex facilis harum in iure maxime nulla repudiandae, velit, vero! Assumenda corporis eum id necessitatibus rem sit temporibus?</p>
+    </div>
+    <div class="clock">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="<?php echo $this->getViewFileUrl('images/dongho1.png'); ?>" alt="">
+                <h3>Hugo Silva</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque consectetur cumque dicta dolore earum enim excepturi explicabo illum, impedit iste magnam necessitatibus non porro quos ratione similique suscipit tempora.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="<?php echo $this->getViewFileUrl('images/dongho2.png'); ?>" alt="">
+                <h3>Imanol Arias</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ipsam rem reprehenderit similique sunt ut. Atque aut eaque esse illum recusandae? Asperiores consequatur debitis eligendi in magni sapiente temporibus totam.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="<?php echo $this->getViewFileUrl('images/dongho3.png'); ?>" alt="">
+                <h3>Javier Bardem</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at blanditiis commodi doloremque dolorum esse eum facere, fugiat illo, in iure necessitatibus nostrum optio porro possimus quae, quibusdam ratione veritatis.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="count">
+    <img src="<?php echo $this->getViewFileUrl('images/bg.png'); ?>" alt="">
+    <div class="row count-row">
+        <div class="col-md-3">
+            <h1>2500</h1>
+            <h4>HAPPY CLIENTS</h4>
+        </div>
+        <div class="col-md-3">
+            <h1>300</h1>
+            <h4>FULL NOTEBOOKS</h4>
+        </div>
+        <div class="col-md-3">
+            <h1>120</h1>
+            <h4>TEAMMATES</h4>
+        </div>
+        <div class="col-md-3">
+            <h1>30</h1>
+            <h4>STORES</h4>
+        </div>
+    </div>
+</div>
+<div class="clock-lorem">
+    <img src="<?php echo $this->getViewFileUrl('images/clock.png'); ?>" alt="">
+</div>
+<div class="bot-content">
+    <h1>OUR GALLERY</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt doloribus inventore iure officiis quos! Accusantium autem iusto quidem quisquam soluta! Alias consequatur illo laboriosam nostrum, odio quibusdam quod repellendus voluptatum?</p>
+</div>
+<div class="carousel_product">
+    <div class="owl-carousel owl-theme product">
+        <div class="item">
+            <a href="" class="thumbnail">
+                <img src="<?php echo $this->getViewFileUrl('images/clock1.png') ?>">
+            </a>
+        </div>
+        <div class="item">
+            <a href="" class="thumbnail">
+                <img src="<?php echo $this->getViewFileUrl('images/clock2.png') ?>">
+            </a>
+        </div>
+        <div class="item">
+            <a href="" class="thumbnail">
+                <img src="<?php echo $this->getViewFileUrl('images/clock3.png') ?>">
+            </a>
+        </div>
+        <div class="item">
+            <a href="" class="thumbnail">
+                <img src="<?php echo $this->getViewFileUrl('images/clock4.png') ?>">
+            </a>
+        </div>
+        <div class="item">
+            <a href="" class="thumbnail">
+                <img src="<?php echo $this->getViewFileUrl('images/clock5.png') ?>">
+            </a>
+        </div>
+    </div>
+</div>
+<script>
+    $('.product').owlCarousel({
+        items:5,
+        loop:true,
+        dots:false,
+        nav:true
+    });
+</script>

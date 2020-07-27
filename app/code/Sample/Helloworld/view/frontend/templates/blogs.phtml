@@ -1,0 +1,35 @@
+<?php
+$posts = $block->GetBlog();
+?>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+<table>
+    <tr>
+        <th class="blog-id">ID</th>
+        <th class="blog-name">Title</th>
+        <th>Summary</th>
+        <th>Description</th>
+        <th>Action</th>
+    </tr>
+    <?php
+    foreach ($posts as $data) { ?>
+        <tr>
+            <td><?= $data->getId() ?></td>
+            <td><?= $data->getTitle() ?></td>
+            <td><?= $data->getSummary() ?></td>
+            <td><?= $data->getDescription() ?></td>
+            <td>
+                <button><a href="<?php echo $block->getUrl('hello/index/edit').'id/'.$data->getData('id'); ?>" class="button">Edit</a></button>
+                <button><a href="<?php echo $block->getUrl('hello/index/delete').'?id='.$data->getData('id'); ?>" class="button">Delete</a></button>
+            </td>
+        </tr>
+    <?php
+    }
+    ?>
+</table>
+<br>
+<button><a href="<?php echo $block->getUrl('hello/index/insert') ?>" class="button">Add New Blog</a></button>

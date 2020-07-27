@@ -1,0 +1,50 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+        <css src="css/bootstrap.css"/>
+        <css src="css/bootstrap-theme.css"/>
+<!--        <css src="css/fontawesome.css" />-->
+<!--        <css src="css/regular.css" />-->
+<!--        <css src="css/solid.css" />-->
+        <css src="https://use.fontawesome.com/releases/v5.7.1/css/all.css" src_type="url"/>
+        <css src="css/style-css.css"/>
+        <css src="css/owl.carousel.min.css"/>
+        <css src="css/owl.theme.default.css"/>
+
+        <script src="js/jquery.js" />
+        <script src="js/bootstrap.js" />
+        <script src="js/owl.carousel.min.js" />
+        <script src="js/npm.js"/>
+    </head>
+    <body>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_file" xsi:type="string">images/logo.PNG</argument>
+                <argument name="logo_width" xsi:type="number">325</argument>
+                <argument name="logo_height" xsi:type="number">60</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceBlock name="top.search" remove="true" />
+        <referenceBlock name="header.panel" remove="true" />
+        <referenceBlock name="minicart" remove="true" />
+        <referenceBlock name="navigation.sections" remove="true" />
+        <referenceBlock name="head.components" remove="true" />
+        <referenceContainer name="footer" remove="true" />
+        <referenceContainer name="page.top">
+            <block class="Magento\Framework\View\Element\Template" name="nav" before="-" template="Sample_Helloworld::sections.phtml" />
+        </referenceContainer>
+
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="vendor.theme.content" template="Sample_Helloworld::Hello.phtml" />
+        </referenceContainer>
+
+<!--        <referenceContainer name="header-wrapper">-->
+<!--            <block class="Magento\Framework\View\Element\Template" name="search"  template="Sample_Helloworld::form.phtml" />-->
+<!--        </referenceContainer>-->
+
+        <referenceContainer name="footer-container">
+            <block class="Magento\Framework\View\Element\Template" name="theme.footer" template="Sample_Helloworld::footer.phtml" />
+        </referenceContainer>
+
+    </body>
+</page>

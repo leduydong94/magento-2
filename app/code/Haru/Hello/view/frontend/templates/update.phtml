@@ -1,0 +1,19 @@
+<?php
+//    $blockObj= $block->getLayout()->createBlock('Haru\Hello\Block\Update');
+    $id = $block->getId();
+//    die($id);
+    $user = $block->getDataById($id);
+//    echo $user->getData('name');
+?>
+
+<form action="<?= $block->getBaseUrl() . 'haru/index/save/id/' . $id ?>" method="post" enctype="multipart/form-data">
+    <label for="">Name</label>
+    <input type="text" name="name" value="<?= $user->getData('name') ?>">
+    <label for="">Email</label>
+    <input type="email" name="email" value="<?= $user->getData('email') ?>">
+    <label for="">Image</label>
+    <input type="file" name="image">
+    <input type="submit" value="Update">
+</form>
+<br>
+<a href="<?= $block->getBaseUrl() . 'haru/index/read' ?>">Back</a>

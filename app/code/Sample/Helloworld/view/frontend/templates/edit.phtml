@@ -1,0 +1,32 @@
+<?php
+//echo "abc";
+//    $blockObj= $block->getLayout()->createBlock('Sample\Helloworld\Block\Edit');
+    $id = $block->getId();
+//    echo $id;
+//    die($blockObj);
+//    var_dump($blockObj);
+//    $blockObj->getEditRecord();
+//    $block->getEditRecord();
+//    $urlParams = Mage::app()->getRequest()->getParams('id');
+//    die($urlParams);
+    $data = $block->getDataById($id);
+//    echo $data->getData('status');
+?>
+
+<form action="<?= $block->getBaseUrl() . 'hello/index/save/id/'.$id ?>" method="post">
+    <label for="">Title</label>
+    <input type="text" name="title" value="<?= $data->getData('title') ?>">
+    <label for="">Summary</label>
+    <input type="text" name="summary" value="<?= $data->getData('summary') ?>">
+    <label for="">Description</label>
+    <input type="text" name="description" value="<?= $data->getData('description') ?>">
+    <label for="">Status</label>
+    <select name="status" id="">
+        <option value="1" <?= $data->getData('status') == 1 ? 'selected' : '' ?>>1</option>
+        <option value="0" <?= $data->getData('status') == 0 ? 'selected' : '' ?>>0</option>
+    </select>
+    <label for=""></label>
+    <input type="submit" value="Edit">
+</form>
+<br>
+<a href="<?php echo $block->getUrl('hello/index/view') ?>">Back</a>
